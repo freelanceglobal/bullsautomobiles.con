@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Inline Cards</title>
+  <style>
+    /* Custom CSS to ensure cards are inline */
+    .inline-cards .card {
+      display: inline-block;
+      width: calc(33.33% - 20px); /* Adjust width to accommodate margins */
+      margin-right: 20px; /* Adjust margin between cards */
+      vertical-align: top; /* Align cards at the top */
+      margin-bottom: 20px; /* Adjust margin bottom for spacing */
+      white-space: normal; /* Allow text wrapping */
+    }
+
+    @media (max-width: 992px) {
+      .inline-cards .card {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove margin-right on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mt-4 mb-3">Inline Cards</h2>
+    <div class="row inline-cards">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">This is some sample text for Card 1.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">This is some sample text for Card 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">This is some sample text for Card 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
